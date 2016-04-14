@@ -44,6 +44,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -56,6 +57,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -64,14 +66,41 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="char\Client.h" />
+    <ClInclude Include="char\item\Item.h" />
+    <ClInclude Include="char\PartyManager.h" />
+    <ClInclude Include="defs.hpp" />
     <ClInclude Include="GameServer.h" />
     <ClInclude Include="LoginServer.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="mysql\mysql.h" />
+    <ClInclude Include="mysql\mysql_com.h" />
+    <ClInclude Include="mysql\mysql_time.h" />
+    <ClInclude Include="mysql\mysql_version.h" />
+    <ClInclude Include="mysql\my_alloc.h" />
+    <ClInclude Include="mysql\my_list.h" />
+    <ClInclude Include="mysql\typelib.h" />
+    <ClInclude Include="net\Msg.h" />
+    <ClInclude Include="net\MsgCodes.h" />
+    <ClInclude Include="net\XSocket.h" />
+    <ClInclude Include="StrTok.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="char\Client.cpp" />
+    <ClCompile Include="char\item\Item.cpp" />
+    <ClCompile Include="char\PartyManager.cpp" />
     <ClCompile Include="GameServer.cpp" />
     <ClCompile Include="LoginServer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="net\Msg.cpp" />
+    <ClCompile Include="net\XSocket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libs\libmysql.lib" />
+    <Library Include="libs\StrTok.lib" />
+    <Library Include="libs\WINMM.LIB" />
+    <Library Include="libs\WS2_32.LIB" />
+    <Library Include="libs\WSOCK32.LIB" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

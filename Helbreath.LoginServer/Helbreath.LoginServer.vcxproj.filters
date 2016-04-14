@@ -25,6 +25,9 @@
     <Filter Include="net">
       <UniqueIdentifier>{1d28c090-b323-4b9d-8a08-93bbefa98cf4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="char\item">
+      <UniqueIdentifier>{ee9237e9-5a5d-4f0b-972c-910a8427a6b8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameServer.h">
@@ -35,6 +38,51 @@
     </ClInclude>
     <ClInclude Include="main.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="char\Client.h">
+      <Filter>char</Filter>
+    </ClInclude>
+    <ClInclude Include="char\PartyManager.h">
+      <Filter>char</Filter>
+    </ClInclude>
+    <ClInclude Include="char\item\Item.h">
+      <Filter>char\item</Filter>
+    </ClInclude>
+    <ClInclude Include="defs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StrTok.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\my_alloc.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\my_list.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\mysql.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\mysql_com.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\mysql_time.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\mysql_version.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql\typelib.h">
+      <Filter>mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="net\Msg.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\MsgCodes.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="net\XSocket.h">
+      <Filter>net</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -47,5 +95,37 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="char\Client.cpp">
+      <Filter>char</Filter>
+    </ClCompile>
+    <ClCompile Include="char\PartyManager.cpp">
+      <Filter>char</Filter>
+    </ClCompile>
+    <ClCompile Include="char\item\Item.cpp">
+      <Filter>char\item</Filter>
+    </ClCompile>
+    <ClCompile Include="net\Msg.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="net\XSocket.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libs\libmysql.lib">
+      <Filter>libs</Filter>
+    </Library>
+    <Library Include="libs\StrTok.lib">
+      <Filter>libs</Filter>
+    </Library>
+    <Library Include="libs\WINMM.LIB">
+      <Filter>libs</Filter>
+    </Library>
+    <Library Include="libs\WS2_32.LIB">
+      <Filter>libs</Filter>
+    </Library>
+    <Library Include="libs\WSOCK32.LIB">
+      <Filter>libs</Filter>
+    </Library>
   </ItemGroup>
 </Project>
